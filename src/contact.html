@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- This website was created by: Anthony Onyekwere -->
+<html lang="en">
+
+<head>
+    <title>Busybee Florist</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/AdobeStock_67181867.jpeg">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Use the header area for the website name or logo -->
+        <a class="menu-icon" id="hamburger" onclick="toggleMobileMenu()">
+            <span>&#9776;</span>
+        </a>
+
+        <header>
+            <a href="index.html">
+                <img src="images/AdobeStock_67181867.jpeg" alt="Busybee Florist logo" id="headerlogo" />
+            </a>
+        </header>
+
+        <nav id="navmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div class="banner">
+                <!-- <img src="images/AdobeStock_336424848.jpeg" alt="Busybee Florist banner"> -->
+                <h2 id="welcome">
+                    Get in touch with us
+                </h2>
+            </div>
+
+            <div class="mobile">
+                <div class="intro-image">
+                    <img class="" src="images/AdobeStock_284911682.jpeg" alt="Busybee Florist flower bouquet" />
+                </div>
+                <div class="intro-text">
+                    <form onsubmit="return receiveMobileFeedback()" action="contactstatus.html" id="mobileForm">
+                        <fieldset>
+                            <legend>Let us hear from you</legend>
+                            <label for="fName">First Name *</label>
+                            <input type="text" required name="fName" id="fName">
+                            <label for="lName">Last Name</label>
+                            <input type="text" name="lName" id="lName">
+                            <label for="email">Email *</label>
+                            <input type="email" required name="email" id="email">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                            <label for="moreInfo">Feedback *</label>
+                            <textarea name="moreInfo" required id="moreInfo" rows="10"></textarea>
+                        </fieldset>
+
+                        <input type="submit" id="submit" value ="Submit" class="btn">
+                    </form>      
+                </div>
+            </div>
+
+            <div id="intro" class="tablet-desktop">
+                <div class="intro-image" id="intro-image1">
+                    <img class="" src="images/AdobeStock_401695850.jpeg" alt="Busybee Florist flower bouquet" />
+                    <img class="" src="images/AdobeStock_284911682.jpeg" alt="Busybee Florist flower bouquet" />
+                    <img class="" src="images/AdobeStock_251396894.jpeg" alt="Busybee Florist flower bouquet" />
+                </div>
+                <div class="intro-text" id="intro-text1">
+                    <form onsubmit="return receiveFeedback()" action="contactstatus.html" id="desktopForm">
+                        <fieldset>
+                            <legend>Let us hear from you</legend>
+                            <label for="fName1">First Name *</label>
+                            <input type="text" required name="fName" id="fName1">
+                            <label for="lName1">Last Name</label>
+                            <input type="text" name="lName" id="lName1">
+                            <label for="email1">Email *</label>
+                            <input type="email" required name="email" id="email1">
+                            <label for="phone1">Phone</label>
+                            <input type="tel" id="phone1" name="phone">
+                            <label for="moreInfo1">Feedback *</label>
+                            <textarea name="moreInfo" required id="moreInfo1" rows="10"></textarea>
+                        </fieldset>
+
+                        <input type="submit" id="submit1" value ="Submit" class="btn">
+                    </form> 
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <p class="">
+                    Phone: <a class="action" href="tel:0747791243">07 4779 1243</a>
+                </p>
+                <!-- <p>Fax: <span>4779 1244</span></p> -->
+                <p>Address: <span>223, Bolsover St in Cairville, Queensland</span></p>
+                <p>
+                    Email:
+                    <a class="action"
+                        href="mailto:busybeeflorist@busybeemail.com.au">busybeeflorist@busybeemail.com.au</a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>Busybee Florist &copy; Copyright 2023. All rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

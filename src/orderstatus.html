@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- This website was created by: Anthony Onyekwere -->
+<html lang="en">
+
+<head>
+    <title>Busybee Florist</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/AdobeStock_67181867.jpeg">
+</head>
+
+<body onload="loadOrderData()">
+    <div id="container">
+        <!-- Use the header area for the website name or logo -->
+        <a class="menu-icon" id="hamburger" onclick="toggleMobileMenu()">
+            <span>&#9776;</span>
+        </a>
+
+        <header>
+            <a href="index.html">
+                <img src="images/AdobeStock_67181867.jpeg" alt="Busybee Florist logo" id="headerlogo" />
+            </a>
+        </header>
+
+        <nav id="navmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <div class="banner">
+                <img src="images/AdobeStock_251396894.jpeg" alt="Busybee Florist banner">
+                <h3 id="">
+                    Dear <span id="formname"></span><br>
+                    <i id="email" class="action">Email</i>                
+                </h3>
+                <h3 id="welcome">
+                    Your order <span id="ordernumber"></span> has been received.<br>Thank you.
+                </h3>
+                <p>Order Details:</p>
+                <h3><span id="formquantity"></span> <span id="formflower"></span></h3>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <p class="">
+                    Phone: <a class="action" href="tel:0747791243">07 4779 1243</a>
+                </p>
+                <!-- <p>Fax: <span>4779 1244</span></p> -->
+                <p>Address: <span>223, Bolsover St in Cairville, Queensland</span></p>
+                <p>
+                    Email:
+                    <a class="action"
+                        href="mailto:busybeeflorist@busybeemail.com.au">busybeeflorist@busybeemail.com.au</a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>Busybee Florist &copy; Copyright 2023. All rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
